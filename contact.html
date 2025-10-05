@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Evanso Media & Graphics. Request a quote or start your creative project today.">
+    <meta name="keywords" content="contact us, design inquiry, request quote, get in touch">
+    <title>Contact Us | Evanso Media & Graphics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-content">
+                <div class="contact-info">
+                    <a href="mailto:evanohmedia@gmail.com"><i class="fas fa-envelope"></i> evanohmedia@gmail.com</a>
+                    <a href="tel:+254 740 722163"><i class="fas fa-phone"></i> +254 740 722163</a>
+                </div>
+                <div class="top-header-right">
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <button class="btn-outline btn-small">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Evanso <span class="gradient-text">Media & Graphics</span></h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h2>Get in <span class="gradient-text">Touch</span></h2>
+            <p>Let's bring your creative vision to life</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" style="width: 100%; padding: 12px 20px; border-radius: var(--radius-md); border: 2px solid rgba(79, 172, 254, 0.3); background: var(--bg-tertiary); color: var(--text-primary); font-family: inherit; font-size: 1rem;">
+                                <option value="">Select a service</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="poster">Posters & Banners</option>
+                                <option value="wedding">Wedding Cards</option>
+                                <option value="certificate">Certificates</option>
+                                <option value="youtube">YouTube Thumbnails</option>
+                                <option value="lyric">Lyric Videos</option>
+                                <option value="social">Social Media Graphics</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-box">
+                    <h3>Contact Information</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--spacing-lg);">Reach out to us through any of these channels. We're here to help!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Email Us</h4>
+                            <p>evanohmedia@gmail.com</p>
+                            <p>We reply within 24 hours</p>
+                           
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Call Us</h4>
+                            <p>+254 740 722163</p>
+                            <p>Mon - Fri: 9AM - 6PM EAT</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Visit Us</h4>
+                            <p>Murang'a, Kenya</p>
+                            <p>East Africa</p>
+                        </div>
+                    </div>
+
+                   <div class="contact-item">
+                     <a href="https://wa.me/254740722163?text=Hello!%20I’d%20like%20to%20know%20more%20about%20your%20services." target="_blank" class="contact-link">
+    <div class="contact-item-icon">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="contact-item-content">
+      <h4>WhatsApp</h4>
+      <p>+254 740 722163</p>
+      <p>Quick responses 24/7</p>
+    </div>
+  </a>
+</div>
+
+
+
+                    <div style="margin-top: var(--spacing-lg);">
+                        <h4 style="margin-bottom: var(--spacing-sm);">Follow Us</h4>
+                        <div class="social-links" style="justify-content: flex-start;">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="accordion-item" style="background: var(--bg-primary); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: 1rem; border: 2px solid transparent; transition: var(--transition-base); cursor: pointer;">
+                    <div class="accordion-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4>What is your turnaround time?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" style="margin-top: var(--spacing-sm); color: var(--text-secondary); display: none;">
+                        <p>Turnaround times vary depending on the project complexity. Simple designs like social media graphics typically take 1-2 days, while complex projects like complete branding packages may take 1-2 weeks. We always discuss timelines upfront and offer rush services for urgent projects.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" style="background: var(--bg-primary); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: 1rem; border: 2px solid transparent; transition: var(--transition-base); cursor: pointer;">
+                    <div class="accordion-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4>How much do your services cost?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" style="margin-top: var(--spacing-sm); color: var(--text-secondary); display: none;">
+                        <p>Our pricing varies based on project scope, complexity, and deliverables. We offer competitive rates and transparent pricing. Contact us with your project details for a custom quote. We also offer package deals for ongoing design needs.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" style="background: var(--bg-primary); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: 1rem; border: 2px solid transparent; transition: var(--transition-base); cursor: pointer;">
+                    <div class="accordion-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4>Do you offer revisions?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" style="margin-top: var(--spacing-sm); color: var(--text-secondary); display: none;">
+                        <p>Yes! We offer multiple revision rounds to ensure you're completely satisfied with the final design. The number of revisions depends on your chosen package, but we always work until you're happy with the result.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" style="background: var(--bg-primary); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: 1rem; border: 2px solid transparent; transition: var(--transition-base); cursor: pointer;">
+                    <div class="accordion-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4>What file formats do you provide?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" style="margin-top: var(--spacing-sm); color: var(--text-secondary); display: none;">
+                        <p>We provide all necessary file formats for your project. This typically includes high-resolution PNG, JPEG, PDF, and vector files (AI, EPS, SVG) for logos and print materials. We ensure you have everything needed for both digital and print use.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" style="background: var(--bg-primary); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: 1rem; border: 2px solid transparent; transition: var(--transition-base); cursor: pointer;">
+                    <div class="accordion-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4>Can you work with my budget?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" style="margin-top: var(--spacing-sm); color: var(--text-secondary); display: none;">
+                        <p>We strive to work with various budgets and offer flexible payment options. Let us know your budget constraints, and we'll create a package that delivers maximum value while meeting your needs. Quality design doesn't always have to break the bank.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Evanso Media & Graphics</h3>
+                    <p>Creating stunning visual experiences that connect and inspire. Your imagination, our expertise.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Posters & Banners</a></li>
+                        <li><a href="services.html">Logo Design</a></li>
+                        <li><a href="services.html">Wedding Cards</a></li>
+                        <li><a href="services.html">Video Production</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> evanohmedia@gmail.com</li>
+                        <li><i class="fas fa-phone"></i>+254 740 722163</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Murang'a, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Evanso Media & Graphics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of design work - logos, posters, videos, and more creative projects">
+    <meta name="keywords" content="design portfolio, graphic design work, creative projects">
+    <title>Portfolio - Evanso Media & Graphics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-content">
+                <div class="contact-info">
+                    <a href="mailto:evanohmedia@gmail.com"><i class="fas fa-envelope"></i> evanohmedia@gmail.com</a>
+                    <a href="tel:+254740722163"><i class="fas fa-phone"></i> +254 740 722163</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <button class="login-btn">Login / Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Evanso <span class="gradient-text">Media & Graphics</span></h1>
+                </div>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="search" placeholder="Search..." id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our <span class="gradient-text">Portfolio</span></h1>
+            <p>A showcase of creativity and innovation</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="section">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="logos">Logos</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+                <button class="filter-btn" data-filter="cards">Cards</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Logo Projects -->
+                <div class="portfolio-item cosmic-card" data-category="logos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1600132806608-231446b2e7af?w=600&h=400&fit=crop" alt="Tech Startup Logo Design">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Tech Startup Logo</h3>
+                        <p>Modern, minimalist logo design for a technology startup</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="logos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&h=400&fit=crop" alt="Luxury Brand Identity">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Luxury Brand Identity</h3>
+                        <p>Elegant logo and brand identity for premium fashion brand</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="logos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=600&h=400&fit=crop" alt="Eco-Friendly Logo">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Eco-Friendly Logo</h3>
+                        <p>Nature-inspired logo for environmental organization</p>
+                    </div>
+                </div>
+
+                <!-- Poster Projects -->
+                <div class="portfolio-item cosmic-card" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=600&h=400&fit=crop" alt="Music Festival Poster">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Music Festival Poster</h3>
+                        <p>Vibrant, eye-catching poster for annual music festival</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Education Campaign">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Education Campaign</h3>
+                        <p>Informative poster series for educational awareness</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=600&h=400&fit=crop" alt="Movie Premiere Poster">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Event Promotion Poster</h3>
+                        <p>Cinematic poster design for special event premiere</p>
+                    </div>
+                </div>
+
+                <!-- Card Projects -->
+                <div class="portfolio-item cosmic-card" data-category="cards">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop" alt="Wedding Invitation Suite">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Wedding Invitation Suite</h3>
+                        <p>Elegant wedding cards with custom calligraphy</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="cards">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&h=400&fit=crop" alt="Birthday Party Invites">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Birthday Party Invites</h3>
+                        <p>Colorful and fun party invitation designs</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="cards">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&h=400&fit=crop" alt="Corporate Certificates">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Certificates</h3>
+                        <p>Professional certificate designs for awards</p>
+                    </div>
+                </div>
+
+                <!-- Video Projects -->
+                <div class="portfolio-item cosmic-card" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop" alt="YouTube Thumbnail Set">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>YouTube Thumbnail Set</h3>
+                        <p>Consistent, click-worthy thumbnails for content creator</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop" alt="Lyric Video Animation">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Lyric Video Animation</h3>
+                        <p>Animated lyric video with custom effects</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop" alt="Promotional Video Graphics">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Promotional Video Graphics</h3>
+                        <p>Motion graphics for brand promotional video</p>
+                    </div>
+                </div>
+
+                <!-- Digital Projects -->
+                <div class="portfolio-item cosmic-card" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop" alt="Social Media Pack">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Pack</h3>
+                        <p>Complete social media graphics package</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop" alt="Desktop Wallpaper Series">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Desktop Wallpaper Series</h3>
+                        <p>Stunning HD wallpaper collection</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Digital Ad Campaign">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Digital Ad Campaign</h3>
+                        <p>Web banner designs for online advertising</p>
+                    </div>
+                </div>
+
+                <!-- Additional Mixed Projects -->
+                <div class="portfolio-item cosmic-card" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=600&h=400&fit=crop" alt="Sports Event Banner">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Sports Event Banner</h3>
+                        <p>Dynamic banner design for marathon event</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop" alt="Email Newsletter Template">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Email Newsletter Template</h3>
+                        <p>Responsive email design for marketing campaigns</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="logos">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Restaurant Logo & Menu">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant Logo & Menu</h3>
+                        <p>Complete branding for fine dining restaurant</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="cards">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1557425529-b1ae03be8e6f?w=600&h=400&fit=crop" alt="Corporate Greeting Cards">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Greeting Cards</h3>
+                        <p>Professional holiday and thank you cards</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop" alt="Product Launch Poster">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Product Launch Poster</h3>
+                        <p>Bold promotional poster for new product launch</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item cosmic-card" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Mobile App Graphics">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App Graphics</h3>
+                        <p>UI/UX graphics for mobile application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Impact</span></h2>
+                <p>Numbers that speak for themselves</p>
+            </div>
+            <div class="services-grid">
+                <div class="cosmic-card" style="padding: 40px; text-align: center;">
+                    <h2 style="font-size: 3rem; margin-bottom: 10px; background: var(--primary-gradient); --webkit-background-clip: text; -webkit-text-fill-color: transparent;">500+</h2>
+                    <h4>Projects Completed</h4>
+                    <p>Successfully delivered designs across all categories</p>
+                </div>
+                <div class="cosmic-card" style="padding: 40px; text-align: center;">
+                    <h2 style="font-size: 3rem; margin-bottom: 10px; background: var(--primary-gradient); --webkit-background-clip: text; -webkit-text-fill-color: transparent;">300+</h2>
+                    <h4>Happy Clients</h4>
+                    <p>Satisfied customers who trust our creative expertise</p>
+                </div>
+                <div class="cosmic-card" style="padding: 40px; text-align: center;">
+                    <h2 style="font-size: 3rem; margin-bottom: 10px; background: var(--primary-gradient); --webkit-background-clip: text; -webkit-text-fill-color: transparent;">5+</h2>
+                    <h4>Years Experience</h4>
+                    <p>Proven track record of excellence since 2020</p>
+                </div>
+                <div class="cosmic-card" style="padding: 40px; text-align: center;">
+                    <h2 style="font-size: 3rem; margin-bottom: 10px; background: var(--primary-gradient); --webkit-background-clip: text; -webkit-text-fill-color: transparent;">98%</h2>
+                    <h4>Client Satisfaction</h4>
+                    <p>Consistently exceeding expectations and delivering quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="newsletter-content cosmic-card">
+                <h2>Like What You <span class="gradient-text">See?</span></h2>
+                <p>Let's create something amazing together. Start your project today and join our growing list of satisfied clients!</p>
+                <div style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services.html" class="btn btn-secondary" style="margin-left: 15px;">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Evanso Media & Graphics</h3>
+                    <p>Professional design solutions for businesses and organizations since 2020.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#posters">Posters & Banners</a></li>
+                        <li><a href="services.html#logos">Logo Design</a></li>
+                        <li><a href="services.html#print">Print Materials</a></li>
+                        <li><a href="services.html#video">Video Content</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> evanohmedia@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +254 740 722163</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Evanso Media & Graphics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
